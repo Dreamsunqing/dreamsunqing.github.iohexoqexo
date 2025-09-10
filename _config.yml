@@ -104,7 +104,7 @@ deploy:
   type: git
   repo: https://github.com/Dreamsunqing/dreamsunqing.github.io
   branch: main
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  message: "Site updated: {{ now('HH:mm:ss') }}"
 
 # 文章
 related_posts:
