@@ -101,7 +101,10 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/Dreamsunqing/dreamsunqing.github.io
+  branch: main
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 
 # 文章
 related_posts:
