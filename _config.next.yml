@@ -1,0 +1,904 @@
+# ===============================================================
+# It's recommended to use Alternate Theme Config to configure NexT
+# Modifying this file may result in merge conflict
+# See: https://theme-next.js.org/docs/getting-started/configuration
+# ===============================================================
+
+# ---------------------------------------------------------------
+# Theme Core Configuration Settings
+# See: https://theme-next.js.org/docs/theme-settings/
+# ---------------------------------------------------------------
+
+# 允许缓存内容生成。
+cache:
+  enable: true
+
+# 在 hexo generate 后移除不必要的文件。
+minify: false
+
+# 定义自定义文件路径。
+# 在站点目录 `source/_data` 中创建你的自定义文件，并取消下面所需文件的注释。
+custom_file_path:
+  #head: source/_data/head.njk
+
+  #header: source/_data/header.njk
+  #sidebar: source/_data/sidebar.njk
+  #postMeta: source/_data/post-meta.njk
+  #postBodyStart: source/_data/post-body-start.njk
+  #postBodyEnd: source/_data/post-body-end.njk
+  #footer: source/_data/footer.njk
+  #bodyEnd: source/_data/body-end.njk
+  #variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  #style: source/_data/styles.styl
+
+# ---------------------------------------------------------------
+# 主题方案设置
+# ---------------------------------------------------------------
+
+# 主题方案
+# scheme: Muse      # 优雅风格
+#scheme: Mist      # 简约风格
+#scheme: Pisces     # 双栏风格
+scheme: Gemini # 响应式双栏风格
+# 暗黑模式
+darkmode: auto
+
+# ---------------------------------------------------------------
+# 站点信息设置
+# ---------------------------------------------------------------
+
+# 图标
+favicon:
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
+  safari_pinned_tab: /images/logo.svg
+  #android_manifest: /manifest.json
+
+  # Custom Logo (Warning: Do not support scheme Mist)
+custom_logo: #/uploads/custom-logo.png
+
+# Creative Commons 4.0 国际许可协议相关设置。
+# 参考: https://creativecommons.org/about/cclicenses/
+creative_commons:
+  # 选择授权类型。可选值: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | cc-zero
+  # 例如 by-nc-sa 表示“署名-非商业性使用-相同方式共享”。
+  license: by-nc-sa
+  # 授权图标大小。可选值: big | small
+  size: small
+  # 是否在侧边栏显示授权信息。
+  sidebar: false
+  # 是否在文章底部显示授权信息。
+  post: false
+  # 设置授权信息显示的语言，例如 deed.zh 表示中文。
+  # CC 许可协议支持 39 种语言，具体缩写可参考官网。
+  language:
+
+    # Open Graph 设置，用于优化社交平台分享效果。
+    # 参考: https://hexo.io/docs/helpers#open-graph
+open_graph:
+  # 是否启用 Open Graph 元数据。
+  enable: true
+  options:
+    # Twitter 卡片类型。可设置为 summary、summary_large_image 等。
+    twitter_card: <twitter:card>
+    # Twitter 作者 ID（可选）。
+    #twitter_id: <twitter:creator>
+    # Twitter 站点 ID（可选）。
+    #twitter_site: <twitter:site>
+    # Twitter 分享图片（可选）。
+    #twitter_image: <twitter:image>
+    # Google+ 个人主页链接（可选）。
+    #google_plus: <g+:profile_link>
+    # Facebook 管理员 ID（可选）。
+    #fb_admins: <fb:admin_id>
+    # Facebook 应用 ID（可选）。
+    #fb_app_id: <fb:app_id>
+
+menu:
+  home: / || fa fa-home
+  #about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  #schedule: /schedule/ || fa fa-calendar
+  #sitemap: /sitemap.xml || fa fa-sitemap
+  #commonweal: /404/ || fa fa-heartbeat
+menu_settings:
+  icons: true # 图标
+  badges: false # 徽章（计数）
+
+# ---------------------------------------------------------------
+# 侧边栏设置
+# 参考文档: https://theme-next.js.org/docs/theme-settings/sidebar
+# ---------------------------------------------------------------
+
+sidebar:
+  # 侧边栏位置。可选值: left | right
+  position: left
+
+  # 侧边栏展开时的宽度（Muse、Mist 主题及移动端 Pisces、Gemini 主题适用）。
+  width_expanded: 320
+  # 双栏模式下的宽度（Pisces、Gemini 主题桌面端适用）。
+  width_dual_column: 240
+
+  # 侧边栏显示方式。
+  # Muse、Mist 主题及移动端 Pisces、Gemini 主题适用。
+  # 可选值:
+  #  - post    在文章页自动展开（默认值）
+  #  - always  所有页面自动展开
+  #  - hide    仅点击侧边栏切换按钮时展开
+  #  - remove  完全移除侧边栏及切换按钮
+  display: post
+
+  # 侧边栏内边距（单位：像素）。
+  padding: 18
+  # 侧边栏距离顶部菜单栏的偏移量（单位：像素，仅 Pisces、Gemini 主题适用）。
+  offset: 12
+
+# 侧边栏头像设置
+avatar:
+  # 替换默认头像图片，设置图片 URL。
+  # 位置: `source/images/avatar.jpg`，则填写 `/images/avatar.jpg`。
+  url: /images/avatar.jpg
+
+  # 是否将头像显示为圆形（true 为圆形，false 为方形）。
+  rounded: true
+  # 是否根据鼠标移动旋转头像（true 为旋转，false 为不旋转）。
+  rotated: true
+
+# 在侧边栏显示文章数、分类数、标签数等站点状态信息。
+site_state: true
+
+# ---------------------------------------------------------------
+# 社交链接设置
+# ---------------------------------------------------------------
+# 用于在站点展示社交账号的快捷入口。
+# 使用方法：`Key: permalink || icon`
+# Key 是显示给用户的标签名称。
+# permalink 是跳转目标链接，icon 是 Font Awesome 图标名称。
+social:
+  GitHub: https://github.com/dashboard || fab fa-github # GitHub 主页
+  E-Mail: mailto:dream_demo@outlook.com || fa fa-envelope # 邮箱地址
+  #Weibo: https://weibo.com/yourname || fab fa-weibo # 微博主页
+  #Twitter: https://twitter.com/yourname || fab fa-twitter # 推特主页
+  #FB Page: https://www.facebook.com/yourname || fab fa-facebook # Facebook 主页
+  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow # StackOverflow 主页
+  #YouTube: https://youtube.com/yourname || fab fa-youtube # YouTube 频道
+  #Instagram: https://instagram.com/yourname || fab fa-instagram # Instagram 主页
+  #Skype: skype:yourname?call|chat || fab fa-skype # Skype 联系方式
+
+  # ---------------------------------------------------------------
+  # 社交图标显示设置
+  # ---------------------------------------------------------------
+social_icons:
+  enable: true # 是否启用社交图标显示
+  icons_only: false # 是否只显示图标，不显示文字
+  transition: true # 是否启用图标切换动画效果
+
+# 友情链接设置
+links_settings:
+  icon: fa fa-globe # 友情链接图标
+  # 可选值: block | inline
+  layout: block # 友情链接布局方式
+
+# 友情链接列表
+links:
+  本站友链接: https://example.com
+
+# 侧边栏目录（Table of Contents）设置
+# Front-matter 变量（不支持 wrap 和 expand_all）
+toc:
+  enable: true # 是否启用目录
+  number: true # 是否自动为目录添加编号
+  # 如果为 true，当标题宽度超过侧边栏宽度时，所有文字将换行显示
+  wrap: false
+  # 如果为 true，文章目录将显示所有层级，而不仅仅是激活部分
+  expand_all: false
+  # 生成目录的最大标题深度
+  max_depth: 6
+
+# ---------------------------------------------------------------
+# 页脚设置
+# 参考文档: https://theme-next.js.org/docs/theme-settings/footer
+# ---------------------------------------------------------------
+
+# 是否在页脚显示多语言切换器。
+language_switcher: false
+
+footer:
+  # 指定网站建立的年份。如果未定义，则使用当前年份。
+  since: 2023
+
+  # 年份与版权信息之间的图标设置。
+  icon:
+    # Font Awesome 图标名称。参考: https://fontawesome.com/icons
+    name: fa fa-heart
+    # 是否为图标添加动画效果。
+    animated: true
+    # 图标颜色，使用十六进制代码。
+    color: "#ff0000"
+
+  # 如果未定义，则使用 Hexo `_config.yml` 中的 `author`。
+  # 设置为 `false` 可禁用版权声明。
+  copyright:
+
+  # 是否显示 Powered by Hexo & NexT。
+  powered: true
+
+  # 备案信息（适用于中国用户）。参考: https://beian.miit.gov.cn, https://beian.mps.gov.cn
+  beian:
+    enable: true
+    icp: 豫ICP备 2025130628 # 工信部备案号中的数字部分。
+
+    gongan_id: # 公安备案号的完整编号。
+
+    gongan_num: # 公安备案图标。登录查看: https://beian.mps.gov.cn/web/business/businessHome/website
+
+    gongan_icon_url:
+      # 公安备案图标 URL。默认值: https://beian.mps.gov.cn/images/logo.png
+
+
+      # 文章设置
+      # 参考文档: https://theme-next.js.org/docs/theme-settings/posts
+      # 使用 front-matter 中的 `description` 作为文章摘要。
+      # 文章摘要
+excerpt_description: true
+
+# 阅读更多按钮
+# 如果为 true，则在摘要部分显示“阅读全文”按钮。
+read_more_btn: true
+
+# 文章元信息显示设置
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at:
+    enable: true
+    another_day: true
+  categories: true
+
+# 文章字数统计显示设置
+# 依赖插件: https://github.com/next-theme/hexo-word-counter
+symbols_count_time:
+  separated_meta: true # 是否将字数统计信息分开显示在文章元信息中
+  item_text_total: true # 是否显示总字数文本
+
+# 使用图标而不是符号 # 在文章底部显示标签
+tag_icon: true
+
+# 打赏（赞助）设置
+# Front-matter 变量（不支持动画）。
+reward_settings:
+  # 如果为 true，则每篇文章默认显示打赏按钮。
+  enable: false
+  # 是否启用打赏按钮动画效果。
+  animation: false
+
+# 打赏二维码图片设置
+reward:
+  #wechatpay: /images/wechatpay.png # 微信支付二维码图片路径
+  #alipay: /images/alipay.png # 支付宝二维码图片路径
+  #paypal: /images/paypal.png # PayPal 捐赠图片路径
+  #bitcoin: /images/bitcoin.png # 比特币捐赠图片路径
+
+# 通过 Telegram 频道、Twitter 等订阅
+# 用法: `Key: permalink || icon` (Font Awesome 图标)
+follow_me:
+  #Twitter: https://twitter.com/username || fab fa-twitter # 推特
+  #Telegram: https://t.me/channel_name || fab fa-telegram # 电报频道
+  WeChat: /images/wechat_channel.png || fab fa-weixin # 微信公众号
+  Bilibili: https://space.bilibili.com/439413018 || fab fa-bilibili # 哔哩哔哩
+  #RSS: /atom.xml || fa fa-rss # RSS 订阅
+
+  # 相关文章推荐
+  # 依赖插件: https://github.com/next-theme/hexo-posts-embedding
+  # 或: https://github.com/sergeyzwezdin/hexo-related-posts
+related_posts:
+  enable: true # 是否启用相关文章推荐
+  icon: fa fa-signs-post # 相关文章图标
+
+# 文章编辑功能
+# 可在线浏览和编辑博客源码。
+post_edit:
+  enable: false # 是否启用文章编辑按钮
+  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/ # 查看源码链接
+  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Fork 并编辑链接
+
+  # 文章导航设置
+  # 在文章页底部显示上一篇和下一篇（如存在）
+  # 可选值: left | right | false
+post_navigation: left
+
+# ---------------------------------------------------------------
+# 自定义页面设置
+# 参考文档: https://theme-next.js.org/docs/theme-settings/custom-pages
+# ---------------------------------------------------------------
+
+# 标签云设置（用于标签页面）。
+tagcloud:
+  min: 12 # 最小字体大小（单位：px）
+  max: 30 # 最大字体大小（单位：px）
+  amount: 200 # 标签总数
+  orderby: name # 标签排序方式
+  order: 1 # 排序顺序（1为升序，-1为降序）
+
+# Google 日历
+# 通过日历页面分享你的近期日程。
+calendar:
+  calendar_id: <required> # 你的 Google 账号邮箱
+  api_key: <required> # Google API 密钥
+  orderBy: startTime # 按开始时间排序
+  showLocation: false # 是否显示地点
+  offsetMax: 72 # 时间范围最大值（单位：小时）
+  offsetMin: 4 # 时间范围最小值（单位：小时）
+  showDeleted: false # 是否显示已删除事件
+  singleEvents: true # 是否只显示单个事件
+  maxResults: 250 # 最大显示事件数量
+
+# ---------------------------------------------------------------
+# 杂项主题设置
+# 参考文档: https://theme-next.js.org/docs/theme-settings/miscellaneous
+# ---------------------------------------------------------------
+
+# 预加载样式并为字体和插件的 CDN 建立预连接。
+# 详细说明: https://www.w3.org/TR/resource-hints/#preconnect
+preconnect: false
+
+# 设置文章/页面中的文本对齐方式。
+text_align:
+  # 可选值: start | end | left | right | center | justify | justify-all | match-parent
+  desktop: justify # 桌面端对齐方式
+  mobile: justify # 移动端对齐方式
+
+# 在窄屏设备上减少内边距/外边距缩进。
+mobile_layout_economy: false
+
+# 浏览器头部面板颜色。
+theme_color:
+  light: "#222" # 浅色模式颜色
+  dark: "#222" # 深色模式颜色
+
+# 覆盖浏览器默认行为。
+body_scrollbar:
+  # 将滚动条置于内容之上。
+  overlay: false
+  # 即使内容未溢出，也为滚动条保留空间。
+  stable: false
+
+codeblock:
+  # 代码高亮主题
+  # 所有可用主题: https://theme-next.js.org/highlight/
+  theme:
+    light: default
+    dark: stackoverflow-dark
+  prism:
+    light: prism
+    dark: prism-dark
+  # 代码块添加复制按钮
+  copy_button:
+    enable: true
+    style: default # 可选样式: default | flat | mac
+  # 显示语言名称
+  language: true
+
+back2top:
+  enable: true # 在侧边栏显示返回顶部按钮
+  sidebar: true # 在返回顶部按钮显示滚动百分比
+  scrollpercent: true # 在移动端显示返回顶部按钮
+
+# 阅读进度条
+reading_progress:
+  enable: true
+  # 可选值: left | right，进度条起始位置
+  start_at: left
+  # 可选值: top | bottom，进度条显示位置
+  position: top
+  reversed: false # 是否反向显示进度条
+  color: "#808080" # 进度条颜色，使用十六进制代码
+  height: 3px # 进度条高度
+
+# 书签支持
+bookmark:
+  enable: false
+  # 自定义书签颜色
+  color: "#222"
+  # 保存阅读进度方式: auto 自动保存，manual 手动保存
+  save: auto
+
+# 顶部右侧显示“Follow me on GitHub”横幅
+github_banner:
+  enable: false
+  permalink: https://github.com/yourname
+
+# ---------------------------------------------------------------
+# 字体设置
+# ---------------------------------------------------------------
+# 可在 Google Fonts (https://fonts.google.com) 查找字体
+# 所有在此设置的字体将包含以下样式：
+#   light | light italic | normal | normal italic | bold | bold italic
+# 注意：设置过多字体会导致网站加载变慢
+# ---------------------------------------------------------------
+# 推荐 `global`（和 `title`）使用 Web 安全字体：
+# Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
+# ---------------------------------------------------------------
+
+font:
+  enable: false # 是否启用自定义字体
+
+  # 字体主机地址，例如 https://fonts.googleapis.com（默认值）。
+  host:
+
+  # 字体选项：
+  # `external: true` 表示从上方 `host` 加载该字体。
+  # `family: Times New Roman`，无需引号。
+  # `size: x.x`，单位为 em。默认值：1（16px）
+
+  # 全局字体设置，应用于 <body> 内所有元素。
+  global:
+    external: true # 是否从外部加载字体
+    family: Lato # 字体名称
+    size:
+      # 字体大小
+
+      # 网站标题字体设置（.site-title）。
+  title:
+    external: true
+    family: # 字体名称
+    size:
+      # 字体大小
+
+      # 标题字体设置（<h1> 到 <h6>）。
+  headings:
+    external: true
+    family: # 字体名称
+    size:
+      # 字体大小
+
+      # 文章内容字体设置（.post-body）。
+  posts:
+    external: true
+    family:
+      # 字体名称
+
+      # 代码和代码块字体设置（<code> 和代码块）。
+  codes:
+    external: true
+    family:
+      # 字体名称
+
+      # ---------------------------------------------------------------
+      # SEO 设置
+      # 参考: https://theme-next.js.org/docs/theme-settings/seo
+      # ---------------------------------------------------------------
+
+      # 如果为 true，则首页标题会添加站点副标题。
+      # 请在 Hexo `_config.yml` 中设置 subtitle（如 subtitle: 副标题）
+      index_with_subtitle: true
+
+      # 自动为外部链接添加 Base64 加密和解密。
+      exturl: true
+      # 如果为 true，则每个外部链接会附加一个图标。
+      exturl_icon: true
+
+      # Google 站长工具验证。
+      # 参考: https://developers.google.com/search
+      google_site_verification:
+
+      # Bing 站长工具验证。
+      # 参考: https://www.bing.com/webmasters
+      bing_site_verification:
+
+      # Yandex 站长工具验证。
+      # 参考: https://webmaster.yandex.ru
+      yandex_site_verification:
+
+      # 百度站长工具验证。
+      # 参考: https://ziyuan.baidu.com/site
+      baidu_site_verification:
+
+        # ---------------------------------------------------------------
+        # 标签插件设置
+        # 参考文档: https://theme-next.js.org/docs/tag-plugins/
+        # ---------------------------------------------------------------
+
+        # Note 标签（bootstrap 提示框）
+note:
+  # Note 标签样式可选值:
+  #  - simple    旧版 bootstrap 提示框样式（默认）
+  #  - modern    新版 bootstrap 提示框样式（v2-v3）
+  #  - flat      扁平提示框样式，类似 Mozilla 或 StackOverflow
+  #  - disabled  禁用 Note 标签所有 CSS 样式
+  style: simple
+  icons: false # 是否显示图标
+  # modern 和 flat 样式下背景色亮度偏移百分比（modern: -12 | 12; flat: -18 | 6）
+  # 也应用于 label 标签变量。可与 disabled 一起使用。
+  light_bg_offset: 0
+
+# Tabs 标签
+tabs:
+  # 内容较长时，标签导航栏是否吸顶
+  sticky: false
+  transition:
+    tabs: false # 标签切换时是否启用动画
+    labels: true # 标签名切换时是否启用动画
+
+# PDF 标签
+# NexT 会尝试原生加载 PDF 文件，失败时使用 pdf.js
+# 如需支持所有浏览器，请安装 pdf.js 依赖
+# 依赖: https://github.com/next-theme/theme-next-pdf
+pdf:
+  enable: false # 是否启用 PDF 标签
+  # 默认高度
+  height: 500px
+
+# Mermaid 标签
+mermaid:
+  enable: false # 是否启用 Mermaid 流程图标签
+  # 可选主题: default | dark | forest | neutral
+  theme:
+    light: default
+    dark: dark
+
+# WaveDrom 标签
+wavedrom:
+  enable: false # 是否启用 WaveDrom 波形图标签
+
+# ---------------------------------------------------------------
+# 第三方插件与服务设置
+# 参考文档: https://theme-next.js.org/docs/third-party-services/
+# 更多插件: https://github.com/next-theme/awesome-next
+# ---------------------------------------------------------------
+
+# ---------------------------------------------------------------
+# 数学公式渲染支持
+# 参考文档: https://theme-next.js.org/docs/third-party-services/math-equations
+# 注意: 请根据文档安装/卸载相关渲染器。
+# 服务端插件: https://github.com/next-theme/hexo-filter-mathjax
+# ---------------------------------------------------------------
+
+math:
+  # 默认 (false) 仅在 front-matter 中设置 `mathjax: true` 的页面加载 mathjax / katex 脚本。
+  # 如果设置为 true，则每个页面都会加载 mathjax / katex 脚本。
+  every_page: false
+
+  mathjax:
+    enable: false
+    # 可选值: none | ams | all
+    tags: none
+
+  katex:
+    enable: false
+    # 参考: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
+    copy_tex: false
+
+# ---------------------------------------------------------------
+# 外部库设置
+# 参考文档: https://theme-next.js.org/docs/third-party-services/external-libraries
+# ---------------------------------------------------------------
+
+# 快速启用网站的 Ajax 导航。
+# 详细说明: https://github.com/next-theme/pjax
+pjax: true
+
+# FancyBox 是一个为图片提供优雅缩放功能的工具。
+# 详细说明: https://fancyapps.com/fancybox/
+fancybox: false
+
+# Medium Zoom 是一个用于图片缩放的 JS 库，类似 Medium。
+# 注意: fancybox 和 mediumzoom 不要同时启用。
+# 详细说明: https://medium-zoom.francoischalifour.com
+mediumzoom: true
+
+# 原生 JS 图片懒加载插件。
+# 详细说明: https://apoorv.pro/lozad.js/demo/
+lazyload: true
+
+# 自动在中日韩字符与半角字符之间插入空格。
+# 详细说明: https://github.com/vinta/pangu.js
+# 服务端插件: https://github.com/next-theme/hexo-pangu
+pangu: false
+
+# 根据用户视口预取链接。
+# 详细说明: https://getquick.link
+# front-matter 变量（首页和归档页不支持）。
+quicklink:
+  enable: false
+
+  # 首页和归档页可通过 home 和 archive 选项单独控制。
+  # 此配置项独立于 `enable`。
+  home: false
+  archive: false
+
+  # 默认 (true) 在 load 事件后初始化 quicklink。
+  delay: true
+  # 自定义浏览器执行预取的毫秒时间。
+  timeout: 3000
+  # 默认 (true) 如果支持则使用 fetch() API（而不是 link[rel=prefetch]）。
+  priority: true
+
+# ---------------------------------------------------------------
+# 动画设置
+# ---------------------------------------------------------------
+
+# 使用 Animate.css 为所有元素添加动画效果。
+# 详细信息: https://animate.style
+motion:
+  enable: true # 是否启用动画
+  async: false # 是否异步加载动画
+  duration: 200 # 动画持续时间（毫秒）
+  transition:
+    # 所有可用的动画过渡类型: https://theme-next.js.org/animate/
+    menu_item: fadeInDown # 菜单项动画
+    post_block: fadeIn # 文章块动画
+    post_header: fadeInDown # 文章头部动画
+    post_body: fadeInDown # 文章内容动画
+    coll_header: fadeInLeft # 折叠头部动画
+    # 仅适用于 Pisces | Gemini 主题。
+    sidebar: fadeInUp # 侧边栏动画
+
+# 页面加载时顶部进度条。
+# 详细信息: https://github.com/CodeByZach/pace
+pace:
+  enable: false # 是否启用进度条
+  # 可用颜色:
+  # black | blue | green | orange | pink | purple | red | silver | white | yellow
+  color: blue # 进度条颜色
+  # 可用主题:
+  # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
+  # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
+  theme: minimal # 进度条主题
+
+# 使用 HTML5 canvas 在网站生成彩带。
+# 详细信息: https://github.com/hustcc/ribbon.js
+canvas_ribbon:
+  enable: true # 是否启用彩带
+  size: 300 # 彩带宽度
+  alpha: 0.6 # 彩带透明度
+  zIndex: -1 # 彩带显示层级
+
+# ---------------------------------------------------------------
+# 评论设置
+# 参考: https://theme-next.js.org/docs/third-party-services/comments
+# 更多评论系统插件: https://github.com/next-theme/awesome-next/blob/main/README.md#comment
+# ---------------------------------------------------------------
+
+# 多评论系统支持
+comments:
+  # 可选值: tabs | buttons
+  style: tabs # 评论系统切换样式
+  # 默认显示的评论系统。
+  # 可选值: disqus | disqusjs | livere | gitalk | utterances | isso
+  active: # 设置为 true 表示记住访客选择的评论系统
+
+  storage: true # 是否记住评论系统选择
+  # 是否懒加载所有评论系统。
+  lazyload: false
+  # 修改评论导航文本或顺序，以下为示例。
+  nav:
+    #disqus:
+    #  text: 加载 Disqus
+    #  order: -1
+    #gitalk:
+    #  order: -2
+
+    # Disqus
+    # 详细信息: https://disqus.com
+disqus:
+  enable: false # 是否启用 Disqus 评论
+  shortname: # Disqus 网站短名
+  count: true # 是否显示评论数
+
+# DisqusJS
+# 更多信息: https://disqusjs.skk.moe
+disqusjs:
+  enable: false # 是否启用 DisqusJS 评论
+  # Disqus API 的端点 (https://disqus.com/api/docs/)
+  # 如果可以直接连接 Disqus API，则保持 api 为空，否则需配置反向代理
+  # 示例:
+  # api: https://disqus.skk.moe/disqus/
+  api:
+  apikey: # 从 https://disqus.com/api/applications/ 注册新应用获取
+  shortname:
+    # 站点短名，见: https://disqus.com/admin/settings/general/
+
+    # LiveRe 评论系统
+    # 可在 https://livere.com/insight/myCode 获取 uid（通用网站）
+livere_uid: # <你的_uid>
+
+# Gitalk
+# 更多信息: https://gitalk.github.io
+gitalk:
+  enable: false # 是否启用 Gitalk 评论
+  github_id: # GitHub 仓库拥有者
+  repo: # 用于存储 issues 的仓库名称
+  client_id: # GitHub 应用 Client ID
+  client_secret: # GitHub 应用 Client Secret
+  admin_user: # 仓库拥有者及协作者，仅这些用户可初始化 issues
+  distraction_free_mode: true # 类 Facebook 的无干扰模式
+  # 官方代理不可用时可更换为自定义代理地址
+  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # 官方代理地址
+  # Gitalk 显示语言取决于用户浏览器或系统环境
+  # 如需统一语言，可设置强制语言值
+  # 可选值: en | es-ES | fr | ru | zh-CN | zh-TW
+  language:
+
+    # Utterances
+    # 更多信息: https://utteranc.es
+utterances:
+  enable: false # 是否启用 Utterances 评论
+  repo: user-name/repo-name # GitHub 仓库拥有者及名称
+  # 可选值: pathname | url | title | og:title
+  issue_term: pathname # issue 匹配方式
+  # 可选值: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
+  theme: github-light # 评论主题样式
+
+# Isso
+# 更多信息: https://isso-comments.de
+isso: # <Isso 评论系统配置>
+
+# ---------------------------------------------------------------
+# 文章小部件与内容分享服务
+# 参考: https://theme-next.js.org/docs/third-party-services/post-widgets
+# ---------------------------------------------------------------
+
+# AddToAny 分享服务。参考: https://www.addtoany.com
+addtoany:
+  enable: false # 是否启用 AddToAny 分享
+  # 示例: buttons: [facebook, twitter]
+  buttons:
+
+    # ---------------------------------------------------------------
+    # 统计与分析服务
+    # 参考: https://theme-next.js.org/docs/third-party-services/statistics-and-analytics
+    # ---------------------------------------------------------------
+
+    # Google Analytics 谷歌分析
+    # 参考: https://analytics.google.com
+google_analytics:
+  tracking_id:
+    # <app_id>，填写你的 Google Analytics 跟踪 ID
+    # NexT 默认会在你的网站加载外部 gtag.js 脚本
+
+  # 如果只需要页面浏览量功能，设置为 true 可提升性能
+  only_pageview: false
+  # 仅在使用 only_pageview 模式时需要，参考: https://developers.google.com/analytics/devguides/collection/protocol/ga4
+  measure_protocol_api_secret:
+
+    # 百度统计
+    # 参考: https://tongji.baidu.com
+baidu_analytics: # <app_id>，填写你的百度统计 ID
+
+# Cloudflare 网站分析
+# 参考: https://www.cloudflare.com/web-analytics/
+cloudflare_analytics:
+
+# Microsoft Clarity 分析
+# 参考: https://clarity.microsoft.com/
+clarity_analytics: # <project_id>，填写你的 Clarity 项目 ID
+
+# Matomo 网站分析
+# 参考: https://matomo.org/
+matomo:
+  enable: false # 是否启用 Matomo
+  server_url: # https://www.example.com/，填写你的 Matomo 服务器地址
+  site_id:
+    # <your site id>，填写你的 Matomo 站点 ID
+
+    # Umami 网站分析
+    # 参考: https://umami.is/
+umami:
+  enable: false # 是否启用 Umami
+  script_url: # https://umami.example.com/script.js，填写 Umami 脚本地址
+  website_id: # <your website id>，填写 Umami 网站 ID
+  host_url:
+    # <your umami site url>，填写 Umami 站点地址
+
+    # Plausible 网站分析
+    # 参考: https://plausible.io/
+plausible:
+  enable: false # 是否启用 Plausible
+  script_url: # https://plausible.io/js/script.js，填写 Plausible 脚本地址
+  site_domain:
+    # www.example.com，填写你的域名
+
+    # 显示每篇文章的访问量工具
+    # 访问 https://console.firebase.google.com/u/0/ 获取 apiKey 和 projectId
+    # 参考: https://firebase.google.com/docs/firestore/
+firestore:
+  enable: false # 是否启用 Firestore 统计
+  collection: articles # 必填，访问 firestore 数据库的集合名称
+  apiKey: # 必填，填写你的 apiKey
+  projectId:
+    # 必填，填写你的 projectId
+
+    # 使用 busuanzi 显示网站/页面的访问量与浏览量
+    # 参考: http://ibruce.info/2015/04/04/busuanzi/
+busuanzi_count:
+  enable: false # 是否启用 busuanzi 统计
+  total_visitors: true # 显示总访客数
+  total_visitors_icon: fa fa-user # 总访客数图标
+  total_views: true # 显示总浏览量
+  total_views_icon: fa fa-eye # 总浏览量图标
+  post_views: true # 显示文章浏览量
+  post_views_icon: far fa-eye # 文章浏览量图标
+
+# ---------------------------------------------------------------
+# 搜索服务
+# 参考: https://theme-next.js.org/docs/third-party-services/search-services
+# ---------------------------------------------------------------
+
+# Algolia 搜索
+# 更多信息: https://www.algolia.com
+algolia_search:
+  enable: false # 是否启用 Algolia 搜索
+  hits:
+    per_page: 10 # 每页显示的搜索结果数量
+
+# 本地搜索
+# 依赖: https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: false # 是否启用本地搜索
+  # 每篇文章显示的搜索结果数量，设置为 -1 显示全部
+  top_n_per_article: 1
+  # 是否将 html 字符串转为可读文本
+  unescape: false
+  # 页面加载时预加载搜索数据
+  preload: false
+
+# ---------------------------------------------------------------
+# 聊天服务
+# 参考: https://theme-next.js.org/docs/third-party-services/chat-services
+# ---------------------------------------------------------------
+
+# 在侧边栏显示聊天按钮，点击后打开指定聊天窗口
+# 首先需启用并配置聊天服务
+chat:
+  enable: false # 是否启用聊天按钮
+  icon: fa fa-comment # Font Awesome 图标名称，设置为 false 可禁用图标
+
+# Chatra 聊天服务，简单易用
+# 更多信息: https://chatra.com
+# 控制台: https://app.chatra.io/settings/general
+chatra:
+  enable: false # 是否启用 Chatra
+  async: true # 是否异步加载
+  id:
+    # 控制台获取 ChatraID
+    #embed: # 开发者实验功能，参考: https://chatra.com/help/api/#injectto
+
+    # Tidio 聊天服务，强大的客服工具
+    # 更多信息: https://www.tidio.com
+    # 控制台: https://www.tidio.com/panel/dashboard
+tidio:
+  enable: false # 是否启用 Tidio
+  key:
+    # 公钥，可在控制台获取，参考: https://www.tidio.com/panel/settings/developer
+
+    # ---------------------------------------------------------------
+    # CDN 设置
+    # 参考: https://theme-next.js.org/docs/advanced-settings/vendors
+    # ---------------------------------------------------------------
+
+vendors:
+  # NexT 内部脚本的 CDN 提供商
+  # 可选值: local | jsdelivr | unpkg | cdnjs | custom
+  # 注意: 使用 NexT 最新 master 分支时请设置为 local
+  internal: local
+  # 第三方插件的默认 CDN 提供商
+  # 可选值: local | jsdelivr | unpkg | cdnjs | custom
+  # 使用 plugins: local 时需安装依赖: https://github.com/next-theme/plugins
+  plugins: cdnjs
+  # 自定义 CDN 地址
+  # 示例:
+  # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
+  # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
+  custom_cdn_url:
+
+    # 静态资源加速设置
+    # 使用 CDN 加速静态文件的加载
+    # js 选项仅在 vendors.internal 为 local 时有效
+css: css # CSS 文件目录
+js: js # JS 文件目录
+images: images # 图片文件目录
